@@ -1,0 +1,22 @@
+#contact-info p
+{ font-size: .8em;
+}
+
+#personal-objective h2::first-letter {
+    color: #9966CC;
+    font-size: xx-large;
+}
+
+ .flame {
+  color:red;
+}
+
+.job {
+	background-color: #e9e5dc; 
+	border-radius: 15px;
+	padding-top: 5px;
+}
+
+.small-text {
+	font-size: .8em;
+}
