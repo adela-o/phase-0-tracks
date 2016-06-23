@@ -49,3 +49,19 @@ green = gets.chomp.to_sym
 
 client = {:name => name, :age => age, :children => children, :decor_theme => decor_theme, :green => green}
 p client
+
+puts "You entered in #{decor_theme} for your decor theme of choice, are there any changes you would like to make to that?"
+input = gets.chomp
+
+if input == "none"
+	puts "We're all set, thank you!"
+else
+	puts "Please enter in new information"
+	puts "What decor theme did you have in mind? Please only list one."
+	new_theme = gets.chomp
+	decor_theme == new_theme
+
+end 
+
+
+p client
