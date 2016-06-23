@@ -58,8 +58,8 @@ if input == "none"
 else
 	puts "Please enter in new information"
 	puts "What decor theme did you have in mind? Please only list one."
-	new_theme = gets.chomp
-	decor_theme == new_theme
+	decor_theme = gets.chomp
+	client.store("decor_theme", decor_theme)
 
 end 
 
