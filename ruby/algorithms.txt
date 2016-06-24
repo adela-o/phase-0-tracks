@@ -1,0 +1,39 @@
+- Locate elevator on bottom floor.
+- Walk to elevator.
+- Locate the up key.
+	- Push the up key.
+- Wait for the doors to open.
+-Wait for anyone or anything to get out of the elevator. 
+- Walk in.
+	- Wait to see if anyone or anything else needs to get on the elevator.
+- Locate the numbered floor button panel.
+- Locate floor button number 16.
+	- Press button 16.
+- Wait in elevator until the 16th floor is reached.
+- Walk out of the elevator once on the 16th floor. 
+
+#Feeding my dog in the morning
+
+- At 9:00 am PST locate the dog's food bowl
+- Walk over to the dog's food bowl.
+	- Pick up food bowl.
+- Tell dog to sit and stay.
+- Walk to under stairs storage closet.
+	- Open the door to the under stairs storage closet.
+	- Take food bowl into under stairs storage closet.
+- Locate dog food container.
+	- Open container.
+	- Locate scoop inside container.
+	- Fill scoop completely with dog food.
+- Put contents of scoop in dog bowl.
+- Walk out of under stairs storage closet.
+	- Shut the door to the under stairs storage closet.
+- Place dog bowl on counter top.
+- Locate water jug.
+	- Pour 8oz of water into dog bowl.
+- Pick up dog bowl. 
+- Walk over to sitting dog with dog bowl.
+	- Test his impulse control by lowering the bowl to his face.
+	- If he trys to eat the food, lift the bowl away. 
+	- Repeat process until he does not try to eat the food. Place the dog bowl on the floor infront of the sitting dog.
+	- Tell the dog "good boy."
