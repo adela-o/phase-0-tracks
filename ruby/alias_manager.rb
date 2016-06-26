@@ -39,7 +39,7 @@ letters = swapped_name.downcase.split("")
 		end
 	end
 	new_array = letters.join("")
-	new_array.split(" ").map! {|word|	word.capitalize}.join(" ")
+	new_array.split(" ").map! {|word| word.capitalize}.join(" ")
 
 end
 
