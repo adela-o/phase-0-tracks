@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice Form</title>
+</head>
+<body>
+<form action="success.html" method="post">
+  <div>
+    <label>Email:</label>
+    <input type="email" name="email">
+  </div>
+  <div>
+    <label>Password:</label>
+    <input type="password" name="password">
+  </div>
+ 
+  <div>
+  	<label>What's your level of programming:</label>
+      <select name="level">
+        <option value="level">Beginner</option>
+        <option value="level">Intermediate</option>
+        <option value="level">Web guru!</option>
+      </select>
+  </div>
+  <textarea name="textarea" rows="10" cols="50">Tell me about your experience level</textarea>
+  <div>
+	<input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+
+</div>
+ <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
