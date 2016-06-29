@@ -1,6 +1,6 @@
 class Puppy
- 
-  def fetch(toy)
+
+   def fetch(toy)
     puts "I brought back the #{toy}!"
   end
 
@@ -26,8 +26,10 @@ class Puppy
   
 end
 
+# initialize
 atticus = Puppy.new
 
+# test Code
 atticus.fetch("ball")
 
 atticus.speak(10)
@@ -40,9 +42,10 @@ atticus.shake
 
 puts "-" * 80
 
+# new class
 class Gymnast
-
-   def flip
+  
+  def flip
     p "*back flip*"
   end
 
@@ -56,4 +59,27 @@ class Gymnast
   
 end
 
+# initialize
 Sarah = Gymnast.new
+
+# release 2 
+index = 0
+gymnast_arry = []
+
+def gymnast_arry(gymnast)
+  gymnast_arry.push(gymnast)
+  
+end
+p gymnast_arry
+
+while index < 50 do 
+   index += 1
+end 
+
+
+
+# test code
+Sarah.flip
+
+Sarah.jump(7)
+
