@@ -37,3 +37,23 @@ atticus.roll_over
 atticus.dog_years(3)
 
 atticus.shake
+
+puts "-" * 80
+
+class Gymnast
+
+   def flip
+    p "*back flip*"
+  end
+
+  def jump(x)
+    p "*Tuck Jump!*" * x
+  end
+  
+  def initialize
+    puts "Initializing new gymnast instance ..."
+  end
+  
+end
+
+Sarah = Gymnast.new
