@@ -1,6 +1,7 @@
 class Puppy
 
-   def fetch(toy)
+ 
+  def fetch(toy)
     puts "I brought back the #{toy}!"
   end
 
@@ -16,10 +17,24 @@ class Puppy
     p x * 7
   end
   
-    def initialize
+  def shake
+    p "*shakes hand*"
+  end
+  
+  def initialize
     puts "Initializing new puppy"
   end
   
 end
 
-spot = Puppy.new
+atticus = Puppy.new
+
+atticus.fetch("ball")
+
+atticus.speak(10)
+
+atticus.roll_over
+
+atticus.dog_years(3)
+
+atticus.shake
