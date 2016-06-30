@@ -40,10 +40,15 @@ atticus.dog_years(3)
 
 atticus.shake
 
-puts "-" * 80
+puts "-" * 40
 
 # new class
-class Gymnast
+class Gymnast 
+  
+  def initialize(athlete)
+  	@athlete = athlete
+  	puts "You made a new gymnast!"
+  end
   
   def flip
     p "*back flip*"
@@ -53,33 +58,34 @@ class Gymnast
     p "*Tuck Jump!*" * x
   end
   
-  def initialize
-    puts "Initializing new gymnast instance ..."
+  def gold_medal
+  	p "*wins gold medal*"
   end
-  
+ 
 end
 
 # initialize
-Sarah = Gymnast.new
-
-# release 2 
-index = 0
-gymnast_arry = []
-
-def gymnast_arry(gymnast)
-  gymnast_arry.push(gymnast)
-  
-end
-p gymnast_arry
-
-while index < 50 do 
-   index += 1
-end 
-
-
+sarah = Gymnast.new("athlete")
 
 # test code
-Sarah.flip
+sarah.flip
+sarah.jump(7)
 
-Sarah.jump(7)
+# release 2: Make 50 instances of your class. 
+# Modify loop so that it stores all instances in a data structure.
+# Iterate over the data structure using .each and call the instance. 
+
+gymnast_arry = []
+
+50.times do 
+	gymnast_arry << sarah = Gymnast.new("athlete")
+	
+	end 
+
+gymnast_arry.each do |n|
+	n.flip
+	n.jump(5)
+	n.gold_medal
+	end
+p gymnast_arry
 
