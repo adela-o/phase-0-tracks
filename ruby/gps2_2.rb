@@ -68,3 +68,23 @@ update_item_quantity!(new_grocery_list, "Ice Cream", 1)
 
 pretty_print_list(new_grocery_list)
 puts ""
+
+# Release 5: Reflect
+
+# What did you learn about pseudocode from working on this challenge?
+#- I learned that pseudocode is SUPER important, and I need to do utilize it more.
+
+# What are the tradeoffs of using arrays and hashes for this challenge?
+#- They're very easy to iterate through. For example: If I used a string it would have required a lot more steps. 
+
+# What does a method return?
+#- A method will return the output of the actions being performed on the input entered on that item. 
+
+# What kind of things can you pass into methods as arguments?
+#- Strings, integers, Arrays, Hashes etc.
+
+# How can you pass information between methods?
+#- By calling a method inside that method. 
+
+# What concepts were solidified in this challenge, and what concepts are still confusing?
+#- Using multiple methods instead of trying to get one method to do everything. I still need to work on refactoring. 
