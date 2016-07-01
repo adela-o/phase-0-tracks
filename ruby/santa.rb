@@ -1,5 +1,6 @@
 # Make class
 class Santa
+attr_reader :age, :ethnicity
 
 	def speak
 		puts "Ho, ho, ho! Haaaaaaaapppppy Holidays! Feliz tiempo de festejar!"		
@@ -42,13 +43,13 @@ class Santa
 
 	# getter methods
 
-	def age
-		@age
-	end
+	#	def age
+	#		@age
+	#	end
 
-	def ethnicity
-		@ethnicity
-	end
+	#	def ethnicity
+	#		@ethnicity
+	#	end
 
 end
 
@@ -58,17 +59,17 @@ def separator
 end
 
 # test code
-# santa = Santa.new("male", "icelandic")
-# santa.speak
-# santa.eat_milk_and_cookies
-# santa.about
-# separator
+santa = Santa.new("male", "icelandic")
+santa.speak
+santa.eat_milk_and_cookies
+santa.about
+separator
 
-# santa = Santa.new("female", "hispanic")
-# santa.speak
-# santa.eat_milk_and_cookies
-# santa.about
-# separator
+santa = Santa.new("female", "hispanic")
+santa.speak
+santa.eat_milk_and_cookies
+santa.about
+separator
 
 #	santas = []
 #	example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A", "attack helicopter"]
@@ -84,9 +85,9 @@ santa.eat_milk_and_cookies
 santa.about
 
 # test setters
-# santa.celebrate_birthday
-# santa.get_mad_at("Rudolph")
-#santa.gender("goldfish")
+santa.celebrate_birthday
+santa.get_mad_at("Rudolph")
+santa.gender("goldfish")
 
 # test getters
 puts "Santa is #{santa.age} and is #{santa.ethnicity}"
