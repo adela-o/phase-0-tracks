@@ -83,6 +83,6 @@ like_spaghetti = gets.chomp.downcase
 
 end
 
-spaghetti_eaters. each do |person|
+spaghetti_eaters.each do |person|
 	person.spaghetti_details
 end
