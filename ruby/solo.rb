@@ -12,13 +12,13 @@ attr_accessor :noodle, :cheese
 	def initialize(noodle, meatballs)
 		puts "Let's make you some spaghetti!!!"
 		@noodle = noodle
-		@meatballs = rand(2..8)
+		@meatballs = rand(2..14) 
 		@cheese = ['Parmesan', 'Asiago', 'Mozzarella', 'Havarti']
 	end
 
 	def pick_noodle
 		puts "What type of noodles do you want?"
-		noodle = gets.chomp
+		@noodle = gets.chomp
 		puts "#{noodle} noodles are a great choice!"
 	end
 
@@ -30,8 +30,27 @@ attr_accessor :noodle, :cheese
 		else
 			puts "One veggie spaghetti comin' up!"
 		end
-		
+	end	
+
+	def add_cheese
+		puts "Would you like us to add a chef's choice of cheese to your dish? (y/n)"
+		cheese_add = gets.chomp.downcase
+		if cheese_add != "n"
+			@cheese = @cheese[rand(@cheese.length)]
+			puts "Ok, we'll add the chef's choice of #{@cheese}, it's magical."
+		else
+			puts "That's fine......cheese hater....."
+		end
+
 	end
+
+	def spaghetti_details
+		puts "----------Your spaghetti is ready----------"
+		puts "For you we have spaghetti with #{@noodle} noodles and #{@meatballs} meatballs sprinkled with #{@cheese}."
+		puts "Yummmmy!"
+
+	end
+
 
 end
 
@@ -47,11 +66,13 @@ puts "Welcome to Adela's spaghetti factory!"
 puts "Would you like some spaghetti? (y/n)"
 like_spaghetti = gets.chomp.downcase
 
-	if like_spaghetti != 'n'
+	if like_spaghetti == 'y'
 	spaghetti_eaters << new_person = Spaghetti.new("", "")	
 	new_person.pick_noodle
 	new_person.add_meatballs
-	puts "-" * 80
+	new_person.add_cheese
+	new_person.spaghetti_details
+	puts "-" * 43
 	else
 		puts "Ok then, see you when you do want spaghetti. Arrivederci!"
 		break
