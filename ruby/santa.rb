@@ -35,8 +35,9 @@ class Santa
 		puts "Get mad at #{@reindeer}"
 	end
 
-	def gender=(new_gender)
+	def gender(new_gender)
 		@gender = new_gender
+		puts "Santa now identifies as #{@gender}"
 	end
 
 end
@@ -70,8 +71,10 @@ end
 santa = Santa.new("attack helicopter", "Mystical Creature (unicorn)")
 santa.speak
 santa.eat_milk_and_cookies
+santa.about
 santa.celebrate_birthday
 santa.get_mad_at("Rudolph")
+santa.gender("goldfish")
 separator
 
 
