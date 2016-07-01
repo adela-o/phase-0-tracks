@@ -1,5 +1,6 @@
-# Make class
+# MAKE CLASS
 class Santa
+# REFACTOR 	
 attr_reader :age, :ethnicity
 attr_accessor :gender
 
@@ -19,79 +20,76 @@ attr_accessor :gender
 		@gender = gender
 		@ethnicity = ethnicity
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donder", "Blitzen"]
-		@age =  0
+		@age =  rand(0..978)
 	end
 
 	def about
 		puts "Santa identifies as #{@gender} and #{@ethnicity} these are his reindeer #{@reindeer_ranking} and is #{@age} years old."
+		puts "Santa's reindeer line up is currently #{@reindeer_ranking} "
 	end
 
-	# attribute changer
+	# ATTRIBUTE CHANGER
 	def celebrate_birthday
 		@age += 1
 		puts "Santa is #{@age} years old"
 	end
 
 	def get_mad_at(reindeer_name)
-		@reindeer = reindeer_name
-		puts "Get mad at #{@reindeer}"
+		favorite_reindeer_order = @reindeer_ranking.index(reindeer_name)
+		@reindeer_ranking.insert(-1, @reindeer_ranking.delete_at(favorite_reindeer_order))
 	end
-
-	# setter method
+	# SETTER METHOD *Keeping for reference*
 	#def gender=(new_gender)
 	#		@gender = new_gender
 	#end
-
-	# getter methods
-
+	# GETTER METHODS
 	#	def age
 	#		@age
 	#	end
-
 	#	def ethnicity
 	#		@ethnicity
 	#	end
-
 end
-
-# Method to make breaks in initializations
+# Method to make breaks in initializations, easier to read when checking
 def separator
 	puts "-" * 40
 end
+# TEST CODE
+#	santa = Santa.new("male", "icelandic")
+#	santa.speak
+#	santa.eat_milk_and_cookies
+#	santa.about
+#	separator
+#	santa = Santa.new("female", "hispanic")
+#	santa.speak
+#	santa.eat_milk_and_cookies
+#	santa.about
+#	separator
+#	santa = Santa.new("attack helicopter", "Mystical Creature (unicorn)")
+#	santa.speak
+#	santa.eat_milk_and_cookies
+# 	santa.about
+# TEST SETTERS
+#	santa.celebrate_birthday
+#	santa.get_mad_at("Rudolph")
+#	santa.gender = "Santa now identifies as goldfish"
+#	santa.about
+# TEST GETTERS
+#	puts "Santa is #{santa.age} and is #{santa.ethnicity}"
+#	separator
 
-# test code
-santa = Santa.new("male", "icelandic")
-santa.speak
-santa.eat_milk_and_cookies
-santa.about
-separator
+	santas = []
+	example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A", "attack helicopter"]
+	example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 
-santa = Santa.new("female", "hispanic")
-santa.speak
-santa.eat_milk_and_cookies
-santa.about
-separator
-
-#	santas = []
-#	example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A", "attack helicopter"]
-#	example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 #	example_genders.length.times do |i|
 #	  santas << Santa.new(example_genders[i], example_ethnicities[i])
 #	end
 
-# Test code for intializations
-santa = Santa.new("attack helicopter", "Mystical Creature (unicorn)")
-santa.speak
-santa.eat_milk_and_cookies
-santa.about
+# create multiple santas with random age, different genders, and ethnicities
 
-# test setters
-santa.celebrate_birthday
-santa.get_mad_at("Rudolph")
-santa.gender = "Santa now identifies as goldfish"
-santa.about
-# test getters
-puts "Santa is #{santa.age} and is #{santa.ethnicity}"
-separator
-
-
+50.times do 
+	santas << Santa.new(example_genders.sample, example_ethnicities.sample, santa.age)
+	puts "This Santa is #{santas.age}, and identifies as #{santas.gender} and as #{santas}."
+	separator
+end
