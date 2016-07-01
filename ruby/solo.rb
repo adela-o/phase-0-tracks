@@ -4,7 +4,7 @@
 # ask if they want meatballs
 # use both of those methods as attributes also
 
-
+# Release 1: write class based off of design
 class Spaghetti
 attr_reader :meatballs
 attr_accessor :noodle, :cheese
@@ -57,6 +57,10 @@ end
 # TEST SYNTACTIC SUGAR
 # puts "Hi there, you picked #{spaghetti_for_1.noodle} noodles and #{spaghetti_for_1.meatballs} meatballs for your meal today."
 
+# Release 2: Use class in a program
+# user should be able to create infinite instances
+# prompt user for each attribute, convert to appropriate data type, store in array 
+
 # USER INTERFACE
 spaghetti_eaters = []
 
@@ -71,7 +75,6 @@ like_spaghetti = gets.chomp.downcase
 	new_person.pick_noodle
 	new_person.add_meatballs
 	new_person.add_cheese
-	new_person.spaghetti_details
 	puts "-" * 43
 	else
 		puts "Ok then, see you when you do want spaghetti. Arrivederci!"
@@ -79,4 +82,7 @@ like_spaghetti = gets.chomp.downcase
 	end
 
 end
-#p spaghetti_eaters
+
+spaghetti_eaters. each do |person|
+	person.spaghetti_details
+end
