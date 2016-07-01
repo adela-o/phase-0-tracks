@@ -30,8 +30,9 @@ class Santa
 		puts "Santa is #{@age} years old"
 	end
 
-	def get_mad_at=(reindeer_name)
+	def get_mad_at(reindeer_name)
 		@reindeer = reindeer_name
+		puts "Get mad at #{@reindeer}"
 	end
 
 	def gender=(new_gender)
@@ -70,6 +71,7 @@ santa = Santa.new("attack helicopter", "Mystical Creature (unicorn)")
 santa.speak
 santa.eat_milk_and_cookies
 santa.celebrate_birthday
+santa.get_mad_at("Rudolph")
 separator
 
 
