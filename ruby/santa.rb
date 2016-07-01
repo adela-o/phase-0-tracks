@@ -1,3 +1,4 @@
+# Make class
 class Santa
 
 	def speak
@@ -10,13 +11,21 @@ class Santa
 		puts "#{cookies} is my favorite, thank you!"		
 	end
 
-	def initialize
+	def initialize(gender, ethnicity)
 		puts "Initializing Santa instance ..."
-
+		# add attributes
+		@gender = gender
+		@ethnicity = ethnicity
+		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+		@age = age = 0
 	end
 end
 
-santa = Santa.new
-
+# Driver code
+santa = Santa.new("male", "icelandic")
+santa.speak
+santa.eat_milk_and_cookies
+puts "-" * 10
+santa = Santa.new("female", "hispanic")
 santa.speak
 santa.eat_milk_and_cookies
