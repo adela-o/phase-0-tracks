@@ -1,7 +1,7 @@
 # Make class
 class Santa
 attr_reader :age, :ethnicity
-#attr_accessor :gender
+attr_accessor :gender
 
 	def speak
 		puts "Ho, ho, ho! Haaaaaaaapppppy Holidays! Feliz tiempo de festejar!"		
@@ -26,7 +26,7 @@ attr_reader :age, :ethnicity
 		puts "Santa identifies as #{@gender} and #{@ethnicity} these are his reindeer #{@reindeer_ranking} and is #{@age} years old."
 	end
 
-	# setter methods
+	# attribute changer
 	def celebrate_birthday
 		@age += 1
 		puts "Santa is #{@age} years old"
@@ -37,9 +37,10 @@ attr_reader :age, :ethnicity
 		puts "Get mad at #{@reindeer}"
 	end
 
-	def gender=(new_gender)
-			@gender = new_gender
-	end
+	# setter method
+	#def gender=(new_gender)
+	#		@gender = new_gender
+	#end
 
 	# getter methods
 
