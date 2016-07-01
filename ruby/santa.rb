@@ -40,6 +40,16 @@ class Santa
 		puts "Santa now identifies as #{@gender}"
 	end
 
+	# getter methods
+
+	def age
+		@age
+	end
+
+	def ethnicity
+		@ethnicity
+	end
+
 end
 
 # Method to make breaks in initializations
@@ -72,9 +82,14 @@ santa = Santa.new("attack helicopter", "Mystical Creature (unicorn)")
 santa.speak
 santa.eat_milk_and_cookies
 santa.about
-santa.celebrate_birthday
-santa.get_mad_at("Rudolph")
-santa.gender("goldfish")
+
+# test setters
+# santa.celebrate_birthday
+# santa.get_mad_at("Rudolph")
+#santa.gender("goldfish")
+
+# test getters
+puts "Santa is #{santa.age} and is #{santa.ethnicity}"
 separator
 
 
