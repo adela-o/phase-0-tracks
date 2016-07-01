@@ -25,7 +25,7 @@ attr_accessor :noodle, :cheese
 	def add_meatballs
 		puts "Do you want to add meatballs? (y/n)"
 		meatballs = gets.chomp.downcase
-		if meatballs != "n"
+		if meatballs == "y"
 			puts "Ok, we'll add #{@meatballs} meatballs."
 		else
 			puts "One veggie spaghetti comin' up!"
@@ -35,7 +35,7 @@ attr_accessor :noodle, :cheese
 	def add_cheese
 		puts "Would you like us to add a chef's choice of cheese to your dish? (y/n)"
 		cheese_add = gets.chomp.downcase
-		if cheese_add != "n"
+		if cheese_add == "y"
 			@cheese = @cheese[rand(@cheese.length)]
 			puts "Ok, we'll add the chef's choice of #{@cheese}, it's magical."
 		else
@@ -79,3 +79,4 @@ like_spaghetti = gets.chomp.downcase
 	end
 
 end
+#p spaghetti_eaters
