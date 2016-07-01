@@ -88,8 +88,8 @@ end
 
 # create multiple santas with random age, different genders, and ethnicities
 
-50.times do 
-	santas << Santa.new(example_genders.sample, example_ethnicities.sample, santa.age)
-	puts "This Santa is #{santas.age}, and identifies as #{santas.gender} and as #{santas}."
+50.times do |new_santa|
+	santas << Santa.new(example_genders.sample, example_ethnicities.sample)
+	puts "This Santa is #{santas[new_santa].age}, and identifies as #{santas[new_santa].gender} and as #{santas[new_santa].ethnicity}."
 	separator
 end
