@@ -52,7 +52,7 @@ attr_accessor :gender
 end
 # Method to make breaks in initializations, easier to read when checking
 def separator
-	puts "-" * 40
+	puts "-" * 80
 end
 # TEST CODE
 #	santa = Santa.new("male", "icelandic")
@@ -90,6 +90,6 @@ end
 
 50.times do |new_santa|
 	santas << Santa.new(example_genders.sample, example_ethnicities.sample)
-	puts "This Santa is #{santas[new_santa].age}, and identifies as #{santas[new_santa].gender} and as #{santas[new_santa].ethnicity}."
+	puts "This Santa is #{santas[new_santa].age} years old, and identifies as #{santas[new_santa].gender} and as #{santas[new_santa].ethnicity}."
 	separator
 end
