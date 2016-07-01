@@ -1,6 +1,7 @@
 # Make class
 class Santa
 attr_reader :age, :ethnicity
+#attr_accessor :gender
 
 	def speak
 		puts "Ho, ho, ho! Haaaaaaaapppppy Holidays! Feliz tiempo de festejar!"		
@@ -36,9 +37,8 @@ attr_reader :age, :ethnicity
 		puts "Get mad at #{@reindeer}"
 	end
 
-	def gender(new_gender)
-		@gender = new_gender
-		puts "Santa now identifies as #{@gender}"
+	def gender=(new_gender)
+			@gender = new_gender
 	end
 
 	# getter methods
@@ -87,8 +87,8 @@ santa.about
 # test setters
 santa.celebrate_birthday
 santa.get_mad_at("Rudolph")
-santa.gender("goldfish")
-
+santa.gender = "Santa now identifies as goldfish"
+santa.about
 # test getters
 puts "Santa is #{santa.age} and is #{santa.ethnicity}"
 separator
