@@ -35,7 +35,26 @@ attr_accessor :noodle, :cheese
 
 end
 
-spaghetti_for_1 = Spaghetti.new("angel hair","") 
 # TEST SYNTACTIC SUGAR
-puts "Hi there, you picked #{spaghetti_for_1.noodle} noodles and #{spaghetti_for_1.meatballs} meatballs for your meal today."
+# puts "Hi there, you picked #{spaghetti_for_1.noodle} noodles and #{spaghetti_for_1.meatballs} meatballs for your meal today."
 
+# USER INTERFACE
+spaghetti_eaters = []
+
+loop do 
+
+puts "Welcome to Adela's spaghetti factory!"
+puts "Would you like some spaghetti? (y/n)"
+like_spaghetti = gets.chomp.downcase
+
+	if like_spaghetti != 'n'
+	spaghetti_eaters << new_person = Spaghetti.new("", "")	
+	new_person.pick_noodle
+	new_person.add_meatballs
+	puts "-" * 80
+	else
+		puts "Ok then, see you when you do want spaghetti. Arrivederci!"
+		break
+	end
+
+end
