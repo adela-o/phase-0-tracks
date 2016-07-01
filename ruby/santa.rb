@@ -17,31 +17,46 @@ class Santa
 		@gender = gender
 		@ethnicity = ethnicity
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donder", "Blitzen"]
-		@age = age = 0
+		@age =  0
 	end
 
 	def about
 		puts "Santa identifies as #{@gender} and #{@ethnicity} these are his reindeer #{@reindeer_ranking} and is #{@age} years old."
-		
 	end
+
+	# setter methods
+	def celebrate_birthday
+		@age += 1
+		puts "Santa is #{@age} years old"
+	end
+
+	def get_mad_at=(reindeer_name)
+		@reindeer = reindeer_name
+	end
+
+	def gender=(new_gender)
+		@gender = new_gender
+	end
+
 end
 
+# Method to make breaks in initializations
 def separator
-	puts "-" * 20
+	puts "-" * 40
 end
 
-# Driver code
-santa = Santa.new("male", "icelandic")
-santa.speak
-santa.eat_milk_and_cookies
-santa.about
-separator
+# test code
+# santa = Santa.new("male", "icelandic")
+# santa.speak
+# santa.eat_milk_and_cookies
+# santa.about
+# separator
 
-santa = Santa.new("female", "hispanic")
-santa.speak
-santa.eat_milk_and_cookies
-santa.about
-separator
+# santa = Santa.new("female", "hispanic")
+# santa.speak
+# santa.eat_milk_and_cookies
+# santa.about
+# separator
 
 #	santas = []
 #	example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A", "attack helicopter"]
@@ -52,6 +67,9 @@ separator
 
 # Test code for intializations
 santa = Santa.new("attack helicopter", "Mystical Creature (unicorn)")
-santa.about
+santa.speak
+santa.eat_milk_and_cookies
+santa.celebrate_birthday
 separator
+
 
