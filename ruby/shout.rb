@@ -25,9 +25,22 @@ module Shout
 	end
 
 	def yell_excitedly(words)
-		"#{words.swapcase}!!!!!!!"		
+		"#{words.swapcase}!!!!!!!"	+ ":D" * 5	
 	end
 	
-
 end
+
+class Parent
+	include Shout
+end
+
+class DBCStudent
+	include Shout
+end
+
+parent = Parent.new
+puts parent.yell_loudly("do your homework")
+
+dbcstudent = DBCStudent.new
+puts dbcstudent.yell_excitedly("sOmEthInG JUST clicked")
 
