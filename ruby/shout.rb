@@ -8,5 +8,6 @@ module Shout
   end
 end
 
-p Shout.yell_angrily("ARRRGGGGHHHH!")
-p Shout.yelling_happily("Yippe")
+# Driver Code
+puts Shout.yell_angrily("ARRRGGGGHHHH!")
+puts Shout.yelling_happily("Yippe")
