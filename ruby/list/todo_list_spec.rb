@@ -1,6 +1,6 @@
 require_relative 'todo_list'
 
-describe List do
+describe TodoList do
   let(:list) { TodoList.new(["do the dishes", "mow the lawn"]) }
 
   it "stores the list items given on initialization" do
