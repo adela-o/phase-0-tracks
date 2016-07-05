@@ -1,4 +1,5 @@
 class TodoList
+attr_accessor :arr
 
 	def initialize(arr)
 		@arr = arr
