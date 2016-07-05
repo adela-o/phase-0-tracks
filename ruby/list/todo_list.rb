@@ -19,7 +19,6 @@ attr_accessor :arr
 
 	def get_item(i)
 		@arr[i]
-		
 	end
 
 end
