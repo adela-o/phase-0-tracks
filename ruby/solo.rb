@@ -62,7 +62,7 @@ end
 # prompt user for each attribute, convert to appropriate data type, store in array 
 
 # USER INTERFACE
-spaghetti_eaters = []
+spaghetti_combos = []
 
 loop do 
 
@@ -71,10 +71,10 @@ puts "Would you like some spaghetti? (y/n)"
 like_spaghetti = gets.chomp.downcase
 
 	if like_spaghetti == 'y'
-	spaghetti_eaters << new_person = Spaghetti.new("", "")	
-	new_person.pick_noodle
-	new_person.add_meatballs
-	new_person.add_cheese
+	spaghetti_combos << new_dish = Spaghetti.new("noodle", "meatballs")	
+	new_dish.pick_noodle
+	new_dish.add_meatballs
+	new_dish.add_cheese
 	puts "-" * 43
 	else
 		puts "Ok then, see you when you do want spaghetti. Arrivederci!"
@@ -83,6 +83,6 @@ like_spaghetti = gets.chomp.downcase
 
 end
 
-spaghetti_eaters.each do |person|
-	person.spaghetti_details
+spaghetti_combos.each do |dish|
+	dish.spaghetti_details
 end
