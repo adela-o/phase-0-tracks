@@ -19,7 +19,13 @@ function reverse(string) {
 	for (var i = string.length - 1; i >= 0; i--){
 		newString += string[i]
 	}
-	console.log(newString)
+	if (string === newString) {
+		return
+	}
+	return newString
 }
+// create new variable for changed string
+var reversedString = reverse("hello")
 
-reverse("hello")
+console.log(reversedString)
+
