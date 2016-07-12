@@ -23,29 +23,33 @@ var car = {
 	stickShift: true,
 };
 
-    function Car(make, year, stickShift) { 
+function Car(make, year, stickShift) { 
     	
-    	console.log("Here's your new car:", this);
+    console.log("Here's your new car:", this);
     	
-    	this.make = make;
-    	this.year = year;
-    	this.stickShift = stickShift;
-    	
-    	this.shift = function() { 
-    		if (this.stickShift) {
+   	this.make = make;
+   	this.year = year;
+   	this.stickShift = stickShift;
+
+   	this.shift = function() { 
+    	if (this.stickShift) {
     		console.log("Change gears");
-    	} else {
+    }	else {
     		console.log("Change gears automatically");
-    	}
-    	};
-    console.log("CAR INITIALIZATION COMPLETE");
+    }
+    };
+console.log("CAR INITIALIZATION COMPLETE");
 }
 
 console.log("Let's build a car...");
 
-var truck = new Car("Chevy", 1958, false);
+var truck = new Car("Chevy", 1958, true);
 console.log(truck);
 truck.shift();
 console.log("-----");
 
-//console.log("Let's ");
+console.log("Let's build another car...");
+var motorcycle = new Car("Ducati", 2006, false);
+console.log(motorcycle);
+motorcycle.shift();
+console.log("-----");
