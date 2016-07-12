@@ -8,13 +8,18 @@
 // PSEUDOCODE
 // 1. make a function that takes a string as a parameter
 // 2. reverse the string. For each index swap with its opposite
+// need for my function loop
+//		 1) string
+//		2) iterator
+//		3)	new string
 
-// reverse
-var str = "hello"
 
-function reverse() {
-	console.log(str) 
-	
+function reverse(string) {
+	var newString = ''
+	for (var i = string.length - 1; i >= 0; i--){
+		newString += string[i]
+	}
+	console.log(newString)
 }
 
-reverse()
+reverse("hello")
