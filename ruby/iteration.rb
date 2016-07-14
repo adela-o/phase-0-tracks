@@ -29,7 +29,7 @@ p usa
 letters = ["a", "b", "c", "d", "e"]
 p letters
 #Hash
-groups = { One: "solo", Two: "pair", Three: "trio", Four: "quartet"}
+groups = { One: "solo", Two: "duo", Three: "trio", Four: "quartet"}
 p groups
 
 
