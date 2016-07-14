@@ -1,10 +1,9 @@
 def build_grocery_list(item_1, item_2, item_3)
 	build_grocery_list = []
-	build_grocery_list << (item_1)
-	build_grocery_list << (item_2)
-	build_grocery_list << (item_3)
+	build_grocery_list = build_grocery_list + [item_1, item_2, item_3]
 end
-#p ["milk", "cheese", "bread"]
+p ["milk", "cheese", "bread"]
+
 
 def add_to_array(array, item)
 	new_array = array << item
