@@ -55,19 +55,19 @@ input = gets.chomp
 
 if input == "done"
 	puts "We're all set, thank you!"
-elsif update == "name"
+elsif input == "name"
 	puts "Please input your name"
 	client[:name] = gets.chomp
-elsif update == "age"
+elsif input == "age"
 	puts "Please input your age"
 	client[:age] = gets.chomp.to_i
-elsif update == "children"
+elsif input == "children"
 	puts "How many children do you have?"
 	client[:children] = gets.chomp.to_i
-elsif update == "decor_theme"
+elsif input == "decor_theme"
 	puts "What is your  decor theme?"
 	client[:decor_theme] = gets.chomp
-elsif update == "favorite_color"
+elsif input == "favorite_color"
 	puts "What is your favorite shade of green?"
 	client[:favorite_color] = gets.chomp
 
