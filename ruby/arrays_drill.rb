@@ -1,12 +1,17 @@
-def build_grocery_list(milk, cheese, bread)
-	return ["milk", "cheese", "bread"]
+def build_grocery_list(item_1, item_2, item_3)
+	build_grocery_list = []
+	build_grocery_list << (item_1)
+	build_grocery_list << (item_2)
+	build_grocery_list << (item_3)
 end
-p ["milk", "cheese", "bread"]
+#p ["milk", "cheese", "bread"]
 
-def add_to_array(chips, chocolate)
-	#	"chips".concat(["chocolate"]) 
-	"chips" << "chocolate"
+def add_to_array(array, item)
+	new_array = array << item
 end
+
+p add_to_array(["cheese"],"chocolate")
+
 #answer must be in "chocolate"
 
 grocery_list =[]
@@ -24,3 +29,5 @@ puts "is it #{gl} that our array includes cheese?"
 rainbow_list = ["magenta", "turquoise", "periwinkle"]
 thing = grocery_list + rainbow_list 
 p thing
+
+p build_grocery_list("milk", "bread", "cheese")
