@@ -33,33 +33,43 @@ puts "Please answer the following client registration questions"
 #get info with gets.chomp
 
 puts "What is your name?"
-name = gets.chomp.to_s
+client[:name] = gets.chomp.to_s
 
 puts "How old are you?"
-age = gets.chomp.to_sym
+client[:age] = gets.chomp.to_sym
 
 puts "How many children do you have?"
-children = gets.chomp.to_sym		
+client[:children] = gets.chomp.to_sym		
 
 puts "What decor theme did you have in mind? Please only list one."
-decor_theme = gets.chomp.to_sym
+client[:decor_theme] = gets.chomp.to_sym
 
 puts "What is your favorite shade of green?"
-green = gets.chomp.to_sym
+client[:green] = gets.chomp.to_sym
 
-client = {:name => name, :age => age, :children => children, :decor_theme => decor_theme, :green => green}
+
 p client
 
-puts "You entered in #{decor_theme} for your decor theme of choice, are there any changes you would like to make to that?"
+puts "Do you want to update any information? If yes, specify the category you want to update. Type done if you do not want to update information"
 input = gets.chomp
 
-if input == "none"
+if input == "done"
 	puts "We're all set, thank you!"
-else
-	puts "Please enter in new information"
-	puts "What decor theme did you have in mind? Please only list one."
-	decor_theme = gets.chomp
-	client.store("decor_theme", decor_theme)
+elsif update == "name"
+	puts "Please input your name"
+	client[:name] = gets.chomp
+elsif update == "age"
+	puts "Please input your age"
+	client[:age] = gets.chomp.to_i
+elsif update == "children"
+	puts "How many children do you have?"
+	client[:children] = gets.chomp.to_i
+elsif update == "decor_theme"
+	puts "What is your  decor theme?"
+	client[:decor_theme] = gets.chomp
+elsif update == "favorite_color"
+	puts "What is your favorite shade of green?"
+	client[:favorite_color] = gets.chomp
 
 end 
 
