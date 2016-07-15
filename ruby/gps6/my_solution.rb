@@ -17,6 +17,7 @@ class VirusPredictor
   end
 
   # calling two methods
+  # Refactor Release: 6
   def virus_effects
 #    predicted_deaths(@population_density, @population, @state)
 #    speed_of_spread(@population_density, @state)
@@ -24,21 +25,22 @@ class VirusPredictor
  print "#{@state} will lose #{predicted_deaths} people in this outbreak and will spread across the state in #{speed_of_spread} months.\n\n"
  end 
 
-  private
+  private # Release: 7; all methods that follow will be made private: not accessible for outside objects
 
   # takes three arguments and calculates predicted deaths for given state with data
   def predicted_deaths #(population_density, population, state)
     # predicted deaths is solely based on population density
+    ## Refactored for Release: 8
     if @population_density >= 200
-      number_of_deaths = (@population * 0.4).floor
+      (@population * 0.4).floor
     elsif @population_density >= 150
-      number_of_deaths = (@population * 0.3).floor
+      (@population * 0.3).floor
     elsif @population_density >= 100
-      number_of_deaths = (@population * 0.2).floor
+      (@population * 0.2).floor
     elsif @population_density >= 50
-      number_of_deaths = (@population * 0.1).floor
+      (@population * 0.1).floor
     else
-      number_of_deaths = (@population * 0.05).floor
+      (@population * 0.05).floor
     end
 
    # print "#{@state} will lose #{number_of_deaths} people in this outbreak"
@@ -52,15 +54,15 @@ class VirusPredictor
     speed = 0.0
 
     if @population_density >= 200
-      speed += 0.5
+        0.5
     elsif @population_density >= 150
-      speed += 1
+        1
     elsif @population_density >= 100
-      speed += 1.5
+        1.5
     elsif @population_density >= 50
-      speed += 2
+        2
     else
-      speed += 2.5
+        2.5
     end
 
    # puts " and will spread across the state in #{speed} months.\n\n"
