@@ -52,7 +52,7 @@ class VirusPredictor
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
     speed = 0.0
-
+    ## Refactored for Release: 8
     if @population_density >= 200
         0.5
     elsif @population_density >= 150
