@@ -97,3 +97,22 @@ end
 
 #=======================================================================
 # Reflection Section
+=begin
+What are the differences between the two different hash syntaxes shown in the state_data file?
+- The rocket hash is used because the key is a string and not a symbol. 
+
+What does require_relative do? How is it different from require?
+- require_relative allows you to load  a file using from a relative location(same directory), it is a
+shortcut for require. To use require you would have to load the whole file path.
+
+What are some ways to iterate through a hash?
+- .each and .map will iterate through a hash. If you use .map! you will change the hash.
+
+When refactoring virus_effects, what stood out to you about the variables, if anything?
+- They were instance variables so they were available throughout the entire class
+
+What concept did you most solidify in this challenge?
+- Iterating through a hash. I needed to step back and take a breath. I knew how to acess the hash
+because of our previous assignment, it was just hard to conceptualize (especially in a GPS, while studying 
+for the assessment). 
+=end
