@@ -17,17 +17,17 @@ Add driver code that tests your function on a few arrays.*/
 // 2. function returns the longest word/phrase in the array
 
 function longestPhrase(string) {
-		var lngth = 0;
-		var phrase = ' '; 
-		for (var i = 0; i < string.length; i++){
-			
-			if (string[i].length > lngth) {
-				lngth = string[i].length;
-				phrase = string[i];
-			}
-		}
-		
-	return phrase;		
+    var lngth = 0;
+    var phrase = ' '; 
+    for (var i = 0; i < string.length; i++){
+      
+      if (string[i].length > lngth) {
+        lngth = string[i].length;
+        phrase = string[i];
+      }
+    }
+    
+  return phrase;    
 }
 
 //RELEASE: 1
@@ -48,12 +48,12 @@ Add some driver code that tests both outcomes of your function*/
 var obj = {
   name: '',
   age: '',
-}
+} ;
 
 var obj = {
     name: '',
     age: '',
-}
+} ;
 
 // for(var key in obj){
 //   console.log(key + ":" + obj[key])
@@ -62,12 +62,12 @@ var obj = {
 function testSimiliar(obj1, obj2){
   for(var key in obj1){
     if(obj2[key] === obj1[key]){
-      return true
+      return true ;
       // If it hits this, return true out of the function
     }
   }
   // return false
-  return false
+  return false ;
 }
 
 // RELEASE: 2
@@ -87,28 +87,28 @@ nd prints the result.
 */
 
 function wordGenerator(number) {
-	var words = [];
-	for (var i = 0; i < number; i++) {
-		var wordLength = Math.floor((Math.random() * 10) + 1);
-		var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-		var generatedWord = '';
-		for (var indx = 0; indx < wordLength; indx++) {
-			var wordIndex = Math.floor((Math.random() * 52) + 1);
-			var generatedLetters = alphabet[wordIndex];
-			generatedWord += generatedLetters;
-		}
-		words.push(generatedWord);
-	}
-	return words;
+  var words = [];
+   var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  for (var i = 0; i < number; i++) {
+    var wordLength = Math.ceil(Math.random() * 10) ;
+    var generatedWord = '';
+    for (var i = 0; i < wordLength; i++) {
+      var wordIndex = Math.ceil(Math.random() * 25) ;
+      var generatedLetters = alphabet[wordIndex];
+      generatedWord += generatedLetters;
+    }
+    words.push(generatedWord);
+  }
+  return words;
 }
 
 function recurrence(x) {
-	var recur = x;
-	for (var i = 0; i< x; i++) {
-		var recurrences = wordGenerator(recur);
-	}
-	console.log(recurrences);
-	return recurrences;
+  var recur = x;
+  for (var i = 0; i < x; i++) {
+    var recurrences = wordGenerator(recur);
+  }
+  console.log(recurrences);
+  return recurrences;
 }
 
 /* DRIVER CODE FOR RELEASE: 0
@@ -126,6 +126,7 @@ console.log(wordGenerator(3));
 console.log(longestPhrase(recurrence(10)));
 */
 
+console.log(longestPhrase(recurrence(10)));
 
 
 
