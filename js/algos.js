@@ -101,18 +101,6 @@ function wordGenerator(number) {
   return words;
 }
 
-
-
-
-// function recurrence(x) {
-//   var recur = x;
-//   for (var i = 0; i < x; i++) {
-//     var recurrences = wordGenerator(recur);
-//   }
-//   console.log(recurrences);
-//   return recurrences;
-// }
-
 /* DRIVER CODE FOR RELEASE: 0
 var myPhrase = ['To', 'all', 'that', 'come', 'to', 'this', 'happy', 'place', 'welcome!'];
 var testPhrase = longestPhrase(myPhrase);
