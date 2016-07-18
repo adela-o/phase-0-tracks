@@ -1,3 +1,4 @@
+// RELEASE: 0
 /*write a function that takes an array 
 of words or phrases and returns the longest word or 
 phrase in the array. 
@@ -29,8 +30,35 @@ function longestPhrase(string) {
 	return phrase;		
 }
 
+//RELEASE: 1
+/*write a function that takes two objects and checks to see if the objects share at least 
+one key-value pair. 
+
+If we called your function with 
+{name: "Steven", age: 54} and {name: "Tamir", age: 54}, the function would return true, <= Test examples
+because at least one key-value pair matches between the two objects. 
+If no pairs match (and keep in mind that the two objects may not even have any of the same keys), the function 
+should return false. 
+
+To make your life easier, don't worry about whether a property is a string 
+('age') or an identifier name (age). Those can be considered equivalent. 
+Add some driver code that tests both outcomes of your function*/
+
+
+
+
+
+/* 
+DRIVER CODE FOR RELEASE: 0
 var myPhrase = ['To', 'all', 'that', 'come', 'to', 'this', 'happy', 'place', 'welcome!'];
 var testPhrase = longestPhrase(myPhrase);
-console.log(testPhrase);
+console.log(testPhrase); 
+*/
+
+/*DRIVER CODE FOR RELEASE: 1 */
+
+
+
+
 
 
