@@ -101,8 +101,15 @@ function wordGenerator(number) {
 	}
 	return words;
 }
-console.log(wordGenerator(3));
 
+function recurrence(x) {
+	var recur = x;
+	for (var i = 0; i< x; i++) {
+		var recurrences = wordGenerator(recur);
+	}
+	console.log(recurrences);
+	return recurrences;
+}
 
 /* DRIVER CODE FOR RELEASE: 0
 var myPhrase = ['To', 'all', 'that', 'come', 'to', 'this', 'happy', 'place', 'welcome!'];
@@ -115,9 +122,9 @@ console.log(testSimiliar({name: "Steven", age: 54}, {name: "Tamir", age: 54}))
 */
 
 /* DRIVER CODE FOR RELEASE: 2
-
+console.log(wordGenerator(3));
+console.log(longestPhrase(recurrence(10)));
 */
-
 
 
 
