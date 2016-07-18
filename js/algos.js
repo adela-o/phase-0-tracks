@@ -16,14 +16,13 @@ Add driver code that tests your function on a few arrays.*/
 // 1. write a function that takes an array
 // 2. function returns the longest word/phrase in the array
 
-function longestPhrase(string) {
+function longestPhrase(array) {
     var lngth = 0;
     var phrase = ' '; 
-    for (var i = 0; i < string.length; i++){
-      
-      if (string[i].length > lngth) {
-        lngth = string[i].length;
-        phrase = string[i];
+    for (var i = 0; i < array.length; i++){
+    if (array[i].length > lngth) {
+        lngth = array[i].length;
+        phrase = array[i];
       }
     }
     
@@ -102,14 +101,17 @@ function wordGenerator(number) {
   return words;
 }
 
-function recurrence(x) {
-  var recur = x;
-  for (var i = 0; i < x; i++) {
-    var recurrences = wordGenerator(recur);
-  }
-  console.log(recurrences);
-  return recurrences;
-}
+
+
+
+// function recurrence(x) {
+//   var recur = x;
+//   for (var i = 0; i < x; i++) {
+//     var recurrences = wordGenerator(recur);
+//   }
+//   console.log(recurrences);
+//   return recurrences;
+// }
 
 /* DRIVER CODE FOR RELEASE: 0
 var myPhrase = ['To', 'all', 'that', 'come', 'to', 'this', 'happy', 'place', 'welcome!'];
@@ -123,10 +125,5 @@ console.log(testSimiliar({name: "Steven", age: 54}, {name: "Tamir", age: 54}))
 
 /* DRIVER CODE FOR RELEASE: 2
 console.log(wordGenerator(3));
-console.log(longestPhrase(recurrence(10)));
+console.log(longestPhrase(wordGenerator(10)));
 */
-
-console.log(longestPhrase(recurrence(10)));
-
-
-
