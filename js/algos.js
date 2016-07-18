@@ -44,7 +44,31 @@ To make your life easier, don't worry about whether a property is a string
 ('age') or an identifier name (age). Those can be considered equivalent. 
 Add some driver code that tests both outcomes of your function*/
 
+//make objects with key value pairs
+var obj = {
+  name: '',
+  age: '',
+}
 
+var obj = {
+    name: '',
+    age: '',
+}
+
+// for(var key in obj){
+//   console.log(key + ":" + obj[key])
+// }
+
+function testSimiliar(obj1, obj2){
+  for(var key in obj1){
+    if(obj2[key] === obj1[key]){
+      return true
+      // If it hits this, return true out of the function
+    }
+  }
+  // return false
+  return false
+}
 
 
 
@@ -56,6 +80,7 @@ console.log(testPhrase);
 */
 
 /*DRIVER CODE FOR RELEASE: 1 */
+console.log(testSimiliar({name: "Steven", age: 54}, {name: "Tamir", age: 54}))
 
 
 
