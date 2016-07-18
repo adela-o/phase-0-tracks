@@ -16,19 +16,20 @@ Add driver code that tests your function on a few arrays.*/
 // 2. function returns the longest word/phrase in the array
 
 function longestPhrase(string) {
-		var array = string.split(' ');
-		for (var i = string.length; i < string.length; i++){
-			console.log(array);
+		var longest = " ";
+		var phrase = " "; 
+		for (var i = 0; i < string.length; i++){
+			if (string[i].length > longest) {
+				longest = string[i].length;
+				phrase = string[i];
+			}
 		}
-		//if (string[i] > array[i]){
-	//		return
-	//	}
-	return array;		
+		
+	return phrase;		
 }
 
-var myPhrase = longestPhrase("To all that come to this happy place, welcome!");
-
-// console.log(longestPhrase("To all that come to this happy place, welcome!"));
-console.log(myPhrase);
+var myPhrase = ['To', 'all', 'that', 'come', 'to', 'this', 'happy', 'place', 'welcome!'];
+var testPhrase = longestPhrase(myPhrase);
+console.log(testPhrase);
 
 
