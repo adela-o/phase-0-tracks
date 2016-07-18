@@ -18,7 +18,7 @@ Add driver code that tests your function on a few arrays.*/
 
 function longestPhrase(string) {
 		var lngth = 0;
-		var phrase = " "; 
+		var phrase = ' '; 
 		for (var i = 0; i < string.length; i++){
 			
 			if (string[i].length > lngth) {
@@ -85,6 +85,23 @@ Add driver code that does the following 10 times: generates an array,
 prints the array, feeds the array to your "longest word" function, 
 nd prints the result.
 */
+
+function wordGenerator(number) {
+	var words = [];
+	for (var i = 0; i < number; i++) {
+		var wordLength = Math.floor((Math.random() * 10) + 1);
+		var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+		var generatedWord = '';
+		for (var indx = 0; indx < wordLength; indx++) {
+			var wordIndex = Math.floor((Math.random() * 52) + 1);
+			var generatedLetters = alphabet[wordIndex];
+			generatedWord += generatedLetters;
+		}
+		words.push(generatedWord);
+	}
+	return words;
+}
+console.log(wordGenerator(3));
 
 
 /* DRIVER CODE FOR RELEASE: 0
