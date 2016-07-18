@@ -16,11 +16,12 @@ Add driver code that tests your function on a few arrays.*/
 // 2. function returns the longest word/phrase in the array
 
 function longestPhrase(string) {
-		var longest = " ";
+		var lngth = 0;
 		var phrase = " "; 
 		for (var i = 0; i < string.length; i++){
-			if (string[i].length > longest) {
-				longest = string[i].length;
+			
+			if (string[i].length > lngth) {
+				lngth = string[i].length;
 				phrase = string[i];
 			}
 		}
