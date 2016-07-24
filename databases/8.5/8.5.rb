@@ -33,9 +33,13 @@ end
 # end
 
 # explore ORM by retrieving data
- username_and_password = db.execute("SELECT * FROM username_and_password")
-username_and_password.each do |user_info|
- 	puts "This is a newly generated email and password pair #{user_info['email']} #{user_info['password']}"
- 	 end
-
+# username_and_password = db.execute("SELECT * FROM username_and_password")
+# username_and_password.each do |user_info|
+#  	puts "This is a newly generated email and password pair #{user_info['email']} #{user_info['password']}"
+# end
 # p username_and_password
+
+# USER INTERFACE
+puts "For security purposes we will automatically generate an email and password for you"
+new_user = create_user_info(db, Faker::Internet.email, Faker::Internet.password)
+puts "Please use the following information when logging in to this site #{Faker::Internet.email} #{Faker::Internet.password}"
