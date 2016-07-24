@@ -40,6 +40,7 @@ end
 # p username_and_password
 
 # USER INTERFACE
+puts "Welcome to a super secretive internet website!"
 puts "For security purposes we will automatically generate an email and password for you"
 new_user = create_user_info(db, Faker::Internet.email, Faker::Internet.password)
-puts "Please use the following information when logging in to this site #{Faker::Internet.email} #{Faker::Internet.password}"
+puts "Please use the following information when logging in to this site username/email: #{Faker::Internet.email} password: #{Faker::Internet.password}"
