@@ -21,8 +21,15 @@ SQL
 db.execute(create_table_cmd)
 
 # add test
-db.execute("INSERT INTO username_and_password (email, password) VALUES ('bob@me.com', 'pickles') ")
+# db.execute("INSERT INTO username_and_password (email, password) VALUES ('bob@me.com', 'pickles') ")
 
 # add more tests
+def create_user_info(db, email, password)
+	db.execute("INSERT INTO username_and_password (email, password) VALUES (?,?)", [email, password])
+end
+
+10.times do 
+	create_user_info(db, Faker::Internet.email, Faker::Internet.password)
+end
 
 # explore ORM by retrieving data
