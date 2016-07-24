@@ -44,3 +44,15 @@ puts "Welcome to a super secretive internet website!"
 puts "For security purposes we will automatically generate an email and password for you"
 new_user = create_user_info(db, Faker::Internet.email, Faker::Internet.password)
 puts "Please use the following information when logging in to this site username/email: #{Faker::Internet.email} password: #{Faker::Internet.password}"
+puts "Would you like a different login information set? (y/n)"
+different = gets.chomp.downcase
+
+	if different == "y" || different == "yes" || different == "ya"
+		new_user_update = create_user_info(db, Faker::Internet.email, Faker::Internet.password)
+		puts "Please use the following information when logging in to this site username/email: #{Faker::Internet.email} password: #{Faker::Internet.password}"
+		 
+	else different == "n" || different ==  "no" || different ==  "nah"	
+		
+	end
+
+puts "See you next time you feel like doing more super mysterious, secretive things on this inexplicable website. Toodles!"
