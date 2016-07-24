@@ -28,8 +28,14 @@ def create_user_info(db, email, password)
 	db.execute("INSERT INTO username_and_password (email, password) VALUES (?,?)", [email, password])
 end
 
-10.times do 
-	create_user_info(db, Faker::Internet.email, Faker::Internet.password)
-end
+# 10.times do 
+# 	create_user_info(db, Faker::Internet.email, Faker::Internet.password)
+# end
 
 # explore ORM by retrieving data
+ username_and_password = db.execute("SELECT * FROM username_and_password")
+username_and_password.each do |user_info|
+ 	puts "This is a newly generated email and password pair #{user_info['email']} #{user_info['password']}"
+ 	 end
+
+# p username_and_password
