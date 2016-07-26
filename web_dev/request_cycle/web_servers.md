@@ -10,3 +10,15 @@
 * Use Shell Scripts to Increase Leverage and Portability
 * Avoid Captive User Interfaces
 * Make Every Program a Filter
+
+## What is a VPS (virtual private server)? What, according to your research, are the advantages of using a VPS?
+
+* A VPS is like having a little computer accessible to you online, full of storage so you can run software. Some advatages of using a VPS are
+	* less expensive than a physical server
+	* can be customized to meet your needs
+	* plans are scalable and you can grow gradually
+	* more control over shared hosting
+	* same technical support as shared hosting
+	* you can choose from semi managed hosting where the web host handles some of the maintenance and fully managed devices
+
+	
