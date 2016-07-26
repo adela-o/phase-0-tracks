@@ -27,3 +27,8 @@ This is usually a temporary condition. Since you are getting a return code, part
 If you do not get service back soon, contact your web host as they would know the best. Some web hosts have server status pages you can check.
 * **550 Permission denied** - The server is stating the account you have currently logged in as does not have permission to perform the action you are attempting. You may be trying to upload to the wrong directory or trying to delete a file.
 
+## What is the difference between a GET request and a POST request? When might each be used?
+
+**GET** - Requests data from a specified resource
+**POST** - Submits data to be processed to a specified resource
+
