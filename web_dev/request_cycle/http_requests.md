@@ -32,3 +32,9 @@ If you do not get service back soon, contact your web host as they would know th
 **GET** - Requests data from a specified resource
 **POST** - Submits data to be processed to a specified resource
 
+## What is a cookie? How does it relate to HTTP requests?
+
+* An HTTP cookie (also called web cookie, Internet cookie, browser cookie or simply cookie) is a small piece of data sent from a website and stored in the user's web browser while the user is browsing.
+
+* When you enter a Web site using cookies, you may be asked to fill out a form providing personal information; like your name, e-mail address, and interests. This information is packaged into a cookie and sent to your Web browser, which then stores the information for later use. The next time you go to the same Web site, your browser will send the cookie to the Web server. The message is sent back to the server each time the browser requests a page from the server.
+
