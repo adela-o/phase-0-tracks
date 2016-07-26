@@ -21,4 +21,7 @@
 	* same technical support as shared hosting
 	* you can choose from semi managed hosting where the web host handles some of the maintenance and fully managed devices
 
-	
+## Why is it considered a bad idea to run programs as the root user on a Linux system?
+
+* Using root could potentially harm your system because it has unlimited power. There are no security checks because the operating system assumes you are completely aware of what you are doing. 
+ 
