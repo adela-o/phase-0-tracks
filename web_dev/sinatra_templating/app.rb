@@ -17,6 +17,13 @@ get '/students/new' do
   erb :new_student
 end
 
+get '/contact' do
+	erb :contact
+end
+
+post '/confirmation' do
+	erb :confirmation
+end
 # create new students via
 # a form
 post '/students' do
@@ -25,3 +32,7 @@ post '/students' do
 end
 
 # add static resources
+
+post '/contact' do
+	redirect '/confirmation'
+end
