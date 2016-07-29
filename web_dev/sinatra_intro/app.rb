@@ -48,5 +48,5 @@ db.results_as_hash = true
 # write a /contact route that displays an address 
 
 get '/contact' do
-  "42 Wallaby Way, Sydney Austrailia"
+  "42 Wallaby Way, Sydney Australia"
 end
