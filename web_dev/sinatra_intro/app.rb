@@ -47,6 +47,19 @@ db.results_as_hash = true
 
 # write a /contact route that displays an address 
 
-get '/contact' do
-  "42 Wallaby Way, Sydney Australia"
+# get '/contact' do
+#   "42 Wallaby Way, Sydney Australia"
+# end
+
+# write a  /great_job route that can take a person's name as a query 
+# parameter (not a route parameter) and say "Good job, [person's name]!".
+# If the query parameter is not present, the route simply says "Good job!" 
+
+get '/great_job' do
+  name = params[:name]
+  if name 
+  "Good job #{name}!"
+  else
+    "Good job!"
+  end
 end
