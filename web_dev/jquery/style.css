@@ -1,0 +1,35 @@
+* { font-family: Helvetica;
+	font-style: normal;
+	color: white;
+ }
+h1 {
+	font-family: Trebuchet;
+	font-style: italic;
+	font-size: 4em;
+	margin: 5%;
+	padding-right: 10px;
+	text-align: center;
+	border-style: groove;
+}
+
+body {
+	text-align: center;
+}
+
+ul li {
+	list-style-position: inside;
+}
+
+button {
+	color: black;
+}	
+
+.song {
+  border: 5px solid #e1dfbe;
+  width: 200px;
+  margin: 100px auto 20px;
+  border-radius: 5px;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 32px
+}
